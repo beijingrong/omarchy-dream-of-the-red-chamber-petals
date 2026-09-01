@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.beijingrong.red-chamber-petals",
+  "name": "Red Chamber Petals",
+  "version": "1.0.0",
+  "author": "beijingrong",
+  "license": "MIT",
+  "description": "Gentle falling chrysanthemum petals for opt-in Omarchy themes, designed for Dream of the Red Chamber.",
+  "kinds": [
+    "service"
+  ],
+  "entryPoints": {
+    "service": "RedChamberPetals.qml"
+  }
+}
