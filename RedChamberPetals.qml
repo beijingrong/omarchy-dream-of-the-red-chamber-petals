@@ -14,6 +14,7 @@ Item {
   property bool active: true
   property bool themeOptIn: false
   property string activeTheme: ""
+  signal advance(real deltaSeconds)
 
   readonly property string stateHome: Quickshell.env("XDG_STATE_HOME")
     || ((Quickshell.env("HOME") || "") + "/.local/state")
@@ -203,6 +204,11 @@ Item {
 
             Component.onCompleted: reset(true)
 
+            Connections {
+              target: root
+              function onAdvance(deltaSeconds) { petal.step(deltaSeconds) }
+            }
+
             Image {
               anchors.fill: parent
               source: root.petalSources[petal.variant]
@@ -227,11 +233,7 @@ Item {
               ? Math.max(0.001, Math.min(0.1, (now - lastTickMs) / 1000))
               : 1 / root.framesPerSecond
             lastTickMs = now
-
-            for (var i = 0; i < petals.count; i++) {
-              var petal = petals.itemAt(i)
-              if (petal) petal.step(deltaSeconds)
-            }
+            root.advance(deltaSeconds)
           }
         }
       }
