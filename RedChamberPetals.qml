@@ -1,8 +1,9 @@
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import Quickshell
 import Quickshell.Io
 import Quickshell.Wayland
-import qs.Ui
 
 Item {
   id: root
@@ -134,9 +135,9 @@ Item {
       // Decorative only: desktop and application input passes through.
       mask: Region {}
 
-      ScreenMoveRemap {
+      ScreenRemapGuard {
         id: remapGuard
-        window: panel
+        targetWindow: panel
       }
 
       Item {

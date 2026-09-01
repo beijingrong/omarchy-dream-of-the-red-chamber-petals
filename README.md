@@ -96,7 +96,8 @@ this or any other shell plugin.
 
 ```bash
 omarchy plugin validate .
-qmllint -I "$OMARCHY_PATH/shell" RedChamberPetals.qml
+/usr/lib/qt6/bin/qmllint -I "$OMARCHY_PATH/shell" \
+  RedChamberPetals.qml ScreenRemapGuard.qml
 ```
 
 ## License
