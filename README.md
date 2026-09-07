@@ -16,7 +16,7 @@ The companion theme is
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/beijingrong/omarchy-red-chamber-petals.git --enable
+omarchy plugin add https://github.com/beijingrong/omarchy-dream-of-the-red-chamber-petals.git --enable
 omarchy theme install https://github.com/beijingrong/omarchy-dream-of-the-red-chamber-theme.git
 ```
 
