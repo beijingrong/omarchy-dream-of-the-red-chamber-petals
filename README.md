@@ -1,5 +1,9 @@
 # Red Chamber Petals
 
+![Dream of the Red Chamber theme with Red Chamber Petals on a real Omarchy desktop](preview.webp)
+
+*真实桌面截图：红楼梦主题与落花插件组合效果。 / Real desktop preview: the companion theme and falling-petal plugin together.*
+
 A restrained falling-petal layer for Omarchy. It renders three bundled SVG
 petals on Wayland's bottom layer and becomes active only when the current theme
 opts in with a `red-chamber-petals.toml` marker.
@@ -102,4 +106,6 @@ omarchy plugin validate .
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Plugin code and bundled petal SVGs: MIT. See [LICENSE](LICENSE).
+
+The desktop preview (`preview.webp`) includes artwork from the companion theme, credited to beijingrong and shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See the [theme artwork provenance](https://github.com/beijingrong/omarchy-dream-of-the-red-chamber-theme#artwork-provenance).
